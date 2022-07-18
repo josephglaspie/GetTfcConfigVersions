@@ -13,6 +13,7 @@ import (
 
 var (
 	tfcToken                 = os.Getenv("TFC_TOKEN")
+	domainName               = os.Getenv("TFC_DOMAIN_NAME")
 	fileName                 = "tfcConfigVersion"
 	allConfigurationVersions []configVersion
 )
@@ -46,7 +47,7 @@ func main() {
 	// get all pages of results
 	var allWorkspaces []*tfe.Workspace
 	for {
-		ws, err := client.Workspaces.List(ctx, "twilio-main", wslOpts)
+		ws, err := client.Workspaces.List(ctx, domainName, wslOpts)
 		if err != nil {
 			log.Fatal(err)
 		}

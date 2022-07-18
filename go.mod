@@ -1,4 +1,4 @@
-module tfcCvChecker
+module tfcConfigVersions
 
 go 1.18
 
