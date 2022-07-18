@@ -5,7 +5,6 @@ Creates a CSV with Terraform Cloud Configuration versions' information so that w
 #### Instructions
 ```
 export TFC_TOKEN="SuperSecretTokenYoullNeedToRunThis"
-git clone git@code.hq.twilio.com:jglaspie/tfcConfigVersions.git
+git@github.com:josephglaspie/GetTfcConfigVersions.git
 go run main.go
 ```
-# tfcCvArchivedScript
